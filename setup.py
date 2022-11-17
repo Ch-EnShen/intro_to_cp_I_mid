@@ -7,3 +7,4 @@ setup(
     ext_modules = cythonize("cfib.pyx"),
     zip_safe = False,
 )
+

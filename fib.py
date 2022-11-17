@@ -1,5 +1,5 @@
-import timeit
 import cfib
+from time import perf_counter
 
 def python_fib(n):
     a, b = 0.0, 1.0
@@ -7,8 +7,11 @@ def python_fib(n):
         a, b = a + b, a
     return a
 
-n = 1000
-t1 = timeit.timeit(stmt = "python_fib(n)", setup = "def python_fib(n):;a, b = 0.0, 1.0;for i in range(n):;a, b = a + b, a;return a")
-t2 = timeit.timeit(stmt = "cfib.cython_fib(n)")
-print(t1, t2)
+n = int(1e6)
+t1 = perf_counter()
+python_fib(n)
+t2 = perf_counter()
+cfib.cython_fib(n)
+t3 = perf_counter()
+print(t2-t1, t3-t2)
 
