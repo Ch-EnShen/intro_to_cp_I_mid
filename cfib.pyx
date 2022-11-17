@@ -7,3 +7,4 @@ cpdef double cython_fib(int n):
     for i in range(n):
         a, b = a + b, a
     return a
+
