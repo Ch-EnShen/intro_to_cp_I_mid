@@ -7,11 +7,15 @@ def python_fib(n):
         a, b = a + b, a
     return a
 
-n = int(1e6)
+n = int(1e3)
+print(n)
 t1 = perf_counter()
-python_fib(n)
+x = python_fib(n)
 t2 = perf_counter()
-cfib.cython_fib(n)
+print(x)
 t3 = perf_counter()
-print(t2-t1, t3-t2)
+y = cfib.cython_fib(n)
+t4 = perf_counter()
+print(y)
+print(t2-t1, t4-t3)
 

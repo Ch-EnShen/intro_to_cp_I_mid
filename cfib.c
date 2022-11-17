@@ -1110,7 +1110,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 /* Module declarations from 'cython' */
 
 /* Module declarations from 'cfib' */
-static int __pyx_f_4cfib_cython_fib(int, int __pyx_skip_dispatch); /*proto*/
+static double __pyx_f_4cfib_cython_fib(int, int __pyx_skip_dispatch); /*proto*/
 #define __Pyx_MODULE_NAME "cfib"
 extern int __pyx_module_is_main_cfib;
 int __pyx_module_is_main_cfib = 0;
@@ -1133,38 +1133,38 @@ static PyObject *__pyx_pf_4cfib_cython_fib(CYTHON_UNUSED PyObject *__pyx_self, i
 /* "cfib.pyx":4
  * cimport cython
  * 
- * cpdef int cython_fib(int n):             # <<<<<<<<<<<<<<
+ * cpdef double cython_fib(int n):             # <<<<<<<<<<<<<<
  *     cdef int i
- *     cdef int a = 0, b = 1
+ *     cdef double a = 0.0, b = 1.0
  */
 
 static PyObject *__pyx_pw_4cfib_1cython_fib(PyObject *__pyx_self, PyObject *__pyx_arg_n); /*proto*/
-static int __pyx_f_4cfib_cython_fib(int __pyx_v_n, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static double __pyx_f_4cfib_cython_fib(int __pyx_v_n, CYTHON_UNUSED int __pyx_skip_dispatch) {
   CYTHON_UNUSED int __pyx_v_i;
-  int __pyx_v_a;
-  int __pyx_v_b;
-  int __pyx_r;
+  double __pyx_v_a;
+  double __pyx_v_b;
+  double __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   int __pyx_t_2;
   int __pyx_t_3;
-  int __pyx_t_4;
-  int __pyx_t_5;
+  double __pyx_t_4;
+  double __pyx_t_5;
   __Pyx_RefNannySetupContext("cython_fib", 0);
 
   /* "cfib.pyx":6
- * cpdef int cython_fib(int n):
+ * cpdef double cython_fib(int n):
  *     cdef int i
- *     cdef int a = 0, b = 1             # <<<<<<<<<<<<<<
+ *     cdef double a = 0.0, b = 1.0             # <<<<<<<<<<<<<<
  *     for i in range(n):
  *         a, b = a + b, a
  */
-  __pyx_v_a = 0;
-  __pyx_v_b = 1;
+  __pyx_v_a = 0.0;
+  __pyx_v_b = 1.0;
 
   /* "cfib.pyx":7
  *     cdef int i
- *     cdef int a = 0, b = 1
+ *     cdef double a = 0.0, b = 1.0
  *     for i in range(n):             # <<<<<<<<<<<<<<
  *         a, b = a + b, a
  *     return a
@@ -1175,7 +1175,7 @@ static int __pyx_f_4cfib_cython_fib(int __pyx_v_n, CYTHON_UNUSED int __pyx_skip_
     __pyx_v_i = __pyx_t_3;
 
     /* "cfib.pyx":8
- *     cdef int a = 0, b = 1
+ *     cdef double a = 0.0, b = 1.0
  *     for i in range(n):
  *         a, b = a + b, a             # <<<<<<<<<<<<<<
  *     return a
@@ -1197,9 +1197,9 @@ static int __pyx_f_4cfib_cython_fib(int __pyx_v_n, CYTHON_UNUSED int __pyx_skip_
   /* "cfib.pyx":4
  * cimport cython
  * 
- * cpdef int cython_fib(int n):             # <<<<<<<<<<<<<<
+ * cpdef double cython_fib(int n):             # <<<<<<<<<<<<<<
  *     cdef int i
- *     cdef int a = 0, b = 1
+ *     cdef double a = 0.0, b = 1.0
  */
 
   /* function exit code */
@@ -1243,7 +1243,7 @@ static PyObject *__pyx_pf_4cfib_cython_fib(CYTHON_UNUSED PyObject *__pyx_self, i
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("cython_fib", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyInt_From_int(__pyx_f_4cfib_cython_fib(__pyx_v_n, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_f_4cfib_cython_fib(__pyx_v_n, 0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
